@@ -1,3 +1,24 @@
+const form = document.getElementById('formcontato');
+const nome = document.getElementById('nome');
+const email = document.getElementById('email');
+const mensagem = document.getElementById('mensagem');
+const feedback = document.getElementById('feedback');
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    if (nome.value === '' || email.value === '' || mensagem.value === '') {
+        feedback.textContent = 'Por favor, preencha todos os campos.';
+        feedback.style.color = 'red';
+        return;
+    } 
+
+    feedback.textContent = 'Mensagem enviada com sucesso!';
+    feedback.style.color = 'green';
+
+    form.reset();
+});
+
 const elementos = document.querySelectorAll('.animar');
 
 function animarScroll() {
@@ -31,4 +52,3 @@ window.addEventListener("scroll", () => {
     header.classList.remove("scrolled");
   }
 });
-
