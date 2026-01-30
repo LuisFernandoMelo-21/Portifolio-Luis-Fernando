@@ -1,3 +1,9 @@
+/* .animar {
+opacity:0;
+transform:translatey (40px);
+} */
+
+
 * {
   margin: 0;
   padding: 0;
@@ -514,4 +520,5 @@ header {
 .header.scrolled {
   background: rgba(2, 6, 23, 0.95);
   padding: 12px 40px;
+
 }
