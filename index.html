@@ -103,17 +103,19 @@
     <h2>contato</h2>
     <p>Entre em contato comigo para projetos ou oportunidades.</p>
 
-   <form
-  class="contato-form"
-  action="https://formsubmit.co/luisfmartins@yahoo.com"
-  method="POST"
->
+    <form
+      id="formcontato"
+      class="contato-form"
+      action="https://formsubmit.co/luisfmartins@yahoo.com"
+      method="POST"
+    >
 
   <input type="hidden" name="_subject" value="Novo contato do portfólio">
   <input type="hidden" name="_captcha" value="false">
-  <input type="hidden" name="_template" value="table">
+  <input type="hidden" name="_next" value="">
 
   <input
+    id="nome"
     type="text"
     name="nome"
     placeholder="Seu Nome"
@@ -121,6 +123,7 @@
   >
 
   <input
+    id="email"
     type="email"
     name="email"
     placeholder="Seu Email"
@@ -128,12 +131,14 @@
   >
 
   <textarea
+    id="mensagem"
     name="mensagem"
     placeholder="Sua Mensagem"
     required
   ></textarea>
 
   <button type="submit">Enviar</button>
+
 </form>
 
 <p id="feedback"></p>
@@ -144,5 +149,3 @@
 <script src="script.js"></script>
 </body>
 </html>
-
-
